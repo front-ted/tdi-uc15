@@ -1,13 +1,160 @@
-/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
-.flip-card {
-  background-color: transparent;
-  width: 300px;
-  height: 300px;
-  border: 1px solid #f1f1f1;
-  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+body{background: #fff;}
+h3, h4, h5{color: #000;}
+.branco{color: #fff;}
+.bloco{
+  padding: 80px 0;
+}
+.bloco1{
+  background: #1A4948;
+  background-image: url('../imgs/bg_dir.png');
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-attachment: fixed;
+}
+.bloco.escuro p, .bloco.escuro .container > ul li,
+.bloco.escuro .container > h2, .bloco.escuro .container > h3, .bloco.escuro .container > h4{
+  color: #fff;
+}
+.bloco.escuro .modal p, 
+.bloco.escuro .caixa-destaque-livre *,
+.bloco.escuro .tab-content *{color: #000;}
+.marcadores li{
+  list-style: none;
+  background: url('../imgs/marcador.svg') no-repeat left top / 25px;
+  padding-left: 40px;
+}
+.bloco2{
+  background: url('../imgs/bg_bloco2.png') no-repeat left 20px top 50px / 12%;
+  background-attachment: fixed;
+}
+.espera-video {
+  max-width: 600px;
+  height: 400px;
+  box-shadow: #333 5px 5px 6px;
+  background-color: #000;
+  margin: 20px auto;
+  position: relative;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 30px;
 }
 
-/* This container is needed to position the front and back side */
+.video-youtube {
+  width: 640px;
+  height: 360px;
+  border-radius: 10px;
+}
+.caixa-destaque-livre{
+  border: 3px solid #000;
+  background-color: #fff;
+  border-radius: 0;
+  -webkit-box-shadow: 10px -10px 0px 0px rgba(214,77,61,1);
+  -moz-box-shadow: 10px -10px 0px 0px rgba(214,77,61,1);
+  box-shadow: 10px -10px 0px 0px rgba(214,77,61,1);
+  margin: 50px 0;
+}
+.bloco3{
+  background-color: #1A4948;
+  background-image:url('../imgs/bg_bloco3.png'), url('../imgs/bg_dir.png');
+  background-repeat: no-repeat;
+  background-position: left 20px top 50px, top right;
+  background-size: 12%, auto;
+  background-attachment: fixed;
+}
+
+/*gaitinha*/
+.panel {
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.panel-default {
+  border: none;
+}
+
+.panel-heading {
+  background-color: #2A8080 !important;
+  color: #fff !important;
+  border-radius: 25px;
+  padding: 15px 30px;
+}
+
+.panel-heading h3 {
+  font-size: 20px;
+}
+
+.panel-group .panel-heading+.panel-collapse>.list-group,
+.panel-group .panel-heading+.panel-collapse>.panel-body {
+  border: none;
+  border-left: #2A8080 solid 5px;
+  margin-left: 30px;
+  padding-right: 40px;
+}
+/* fim gaitinha*/
+
+/* painel abas */
+.tab-content {
+  border: 3px solid #bc3630;
+  background-color: #fff;
+  padding: 26px;
+  margin-bottom: 50px;
+}
+
+.nav-tabs>li.active>a,
+.nav-tabs>li.active>a:focus,
+.nav-tabs>li.active>a:hover {
+  color: #bc3630;
+  cursor: default;
+  background-color: #fff;
+  border: 3px solid #bc3630;
+  border-bottom-color: transparent;
+}
+
+.nav-tabs>li>a {
+  color: #fff;
+  background-color: #bc3630;
+  border: 3px solid #fff;
+  border-radius: 0;
+  border-bottom: none;
+}
+.nav-tabs>li {
+  margin-bottom: -4px;
+  border-bottom: 0;
+}
+
+/* painel abas */
+
+.painel1, .painel2{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.painel1 button{
+  width: 200px;
+  height: 210px;
+  border: none;
+  background-position: bottom center;
+  margin: 20px 0;
+  transition: all .4s;
+}
+.painel1 button:hover{transform: scale(1.1);}
+.bt-missao{background: url('../imgs/painel1_bt1.png') no-repeat;}
+.bt-visao{background: url('../imgs/painel1_bt2.png') no-repeat;}
+.bt-valores{background: url('../imgs/painel1_bt3.png') no-repeat;}
+.bt-golden{background: url('../imgs/painel1_bt4.png') no-repeat;}
+
+/*flip cards*/
+.flip-card {
+  background-color: transparent;
+  width: 260px;
+  height: 310px;
+  perspective: 1000px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
 .flip-card-inner {
   position: relative;
   width: 100%;
@@ -15,14 +162,13 @@
   text-align: center;
   transition: transform 0.8s;
   transform-style: preserve-3d;
+  -webkit-box-shadow: 10px -10px 0px 0px rgba(214,77,61,1);
+  -moz-box-shadow: 10px -10px 0px 0px rgba(214,77,61,1);
+  box-shadow: 10px -10px 0px 0px rgba(214,77,61,1);
 }
-
-/* Do an horizontal flip when you move the mouse over the flip box container */
 .flip-card:hover .flip-card-inner {
   transform: rotateY(180deg);
 }
-
-/* Position the front and back side */
 .flip-card-front, .flip-card-back {
   position: absolute;
   width: 100%;
@@ -30,21 +176,137 @@
   -webkit-backface-visibility: hidden; /* Safari */
   backface-visibility: hidden;
 }
-
-/* Style the front side (fallback if image is missing) */
 .flip-card-front {
-  background-color: #bbb;
-  color: black;
+  border: 3px solid #fff;
+  background: #d64d3d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
-/* Style the back side */
+.flip-card-front h4{
+  color: #fff;
+  font-size: 32px;
+  text-align: left;
+  padding-left: 30px; 
+}
 .flip-card-back {
-  background-color: dodgerblue;
-  color: white;
+  color: #000;
   transform: rotateY(180deg);
+  font-family: roboto;
+  text-align: left;
+  font-size: 12px;
+  padding: 10px;
+  border: 3px solid #d64d3d;
+}
+.flip-card-back p{margin-top: 0;}
+/*fim flip cards*/
+
+.cards{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
-.citacao{
-  padding-left: 60px;
-  font-size: 11px;
+.painel2 button{
+  width: 170px;
+  height: 170px;
+  border: none;
+  background-color: transparent;
+  transition: all .4s;
+  margin: 30px 0;
+}
+.bt-apple{background: url('../imgs/bt_apple.png') no-repeat;}
+.bt-nike{background: url('../imgs/bt_nike.png') no-repeat;}
+.bt-apple:hover{background: url('../imgs/bt_apple_hover.png') no-repeat;}
+.bt-nike:hover{background: url('../imgs/bt_nike_hover.png') no-repeat;}
+
+.bloco4{
+  background: url('../imgs/bg_bloco4.png') no-repeat left 20px top 50px / 15%;
+  background-attachment: fixed;
+}
+.bloco5{
+  background-color: #1A4948;
+  background-image:url('../imgs/bg_bloco5.png'), url('../imgs/bg_dir.png');
+  background-repeat: no-repeat;
+  background-position: left 20px top 50px, top right;
+  background-size: 12%, auto;
+  background-attachment: fixed;
+}
+.info1{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-top: 50px;
+}
+.info1 img{margin-bottom: 50px;}
+.bloco6{
+  background-image: url('../imgs/bg_bloco6_7_8.png'), url('../imgs/bg_bloco6.png');
+  background-repeat: no-repeat;
+  background-position: left 20px top 50px, right 20px top 50px;
+  background-size: 15%;
+  background-attachment: fixed;
+}
+.painel3{
+  width: 693px;
+  height: 513px;
+  background: url('../imgs/painel_escada.png') no-repeat;
+  margin: 50px auto;
+}
+.painel3 button{
+  width: 100%;
+  border: 0;
+  background-color: transparent;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.bt-definicao{
+  height: 65px;
+  margin-top: 0;
+  
+}
+.bt-definicao:hover{background-image: url('../imgs/painel_escada_hover1.png');}
+.bt-externo{
+  height: 74px;
+  margin-top: -3px;
+}
+.bt-externo:hover{background-image: url('../imgs/painel_escada_hover2.png');}
+.bt-consumidor{
+  height: 86px;
+  margin-top: -5px;
+}
+.bt-consumidor:hover{background-image: url('../imgs/painel_escada_hover3.png');}
+.bt-projecao{
+  height: 106px;
+  margin-top: -5px;
+}
+.bt-projecao:hover{background-image: url('../imgs/painel_escada_hover4.png');}
+.bt-acao{
+  height: 149px;
+  margin-top: -5px;
+}
+.bt-acao:hover{background-image: url('../imgs/painel_escada_hover5.png');}
+
+.citacao {
+  padding-left: 30%;
+}
+.citacao li{
+  list-style-type: disc;
+  list-style-image: none;
+}
+.citacao *{font-size: 14px;}
+
+@media (max-width: 768px){
+  .painel3{
+    background: none;
+    width: 100%;
+  }
+  .bt-definicao{background-image: url('../imgs/painel_escada_hover1.png');}
+  .bt-externo{background-image: url('../imgs/painel_escada_hover2.png');}
+  .bt-consumidor{background-image: url('../imgs/painel_escada_hover3.png');}
+  .bt-projecao{background-image: url('../imgs/painel_escada_hover4.png');}
+  .bt-acao{background-image: url('../imgs/painel_escada_hover5.png');}
+}
+@media (max-width: 480px){
+  
 }

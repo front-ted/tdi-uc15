@@ -7,7 +7,7 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 12%, 12%, cover;
-  background-position: left 30px top 200px, right 30px top 400px, center center;
+  background-position: left 30px top 100px, right 30px top 300px, center center;
 }
 
 .mob-m {

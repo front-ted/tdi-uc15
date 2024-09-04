@@ -74,7 +74,7 @@
     </div>
     <div id="sombra"></div>
   </header>
-  <div id="booklet" class="container fundo-tecnicos">
+  <div id="booklet">
     <header class="no-print">
       <!-- BTO IMPRIMIR -->
 
@@ -84,7 +84,7 @@
     <section class="paginas">
       <!-- - - - - - - - cada página é independente  - - - - - - - - - - -->
       <div class="pagina">
-        <div class="bloco">
+        <div class="bloco bloco1 escuro">
           <div class="container">
             <div class="grupo-imprimir no-print">
               <button type="button" data-pdf="true" class="bto-imprimir" name="button">
@@ -106,12 +106,13 @@
             <p>Neste conhecimento, você aprenderá mais detalhes sobre assuntos fundamentais para um planejamento de carreira de qualidade. </p>
           </div>
         </div>
-        <div class="bloco">
+        <div class="bloco bloco2">
           <div class="container">
             <h3><i>Marketing</i></h3>
             <p>Para começar, que tal assistir a uma videoaula sobre <i>marketing</i> pessoal?</p>
             <p class="no-print" aria-hidden="true">Clique ou toque no botão de <i>play</i> para assistir ao vídeo.</p>
             <!--aqui vai vídeo-->
+            <div class="espera-video"></div>
             <div class="acessivel print">
               <p>Olá, vamos falar sobre <i>marketing</i> pessoal? Você conhece esse tema ou já ouviu falar sobre ele? </p>
               <p>Conceitualmente, o <i>marketing</i> pessoal é o conjunto de ações planejadas que possibilitam a obtenção do sucesso pessoal e profissional, seja para conquistar uma nova posição no mercado de trabalho, seja para manter sua posição atual (Ritossa, 2009). Essas ações compreendem não somente a divulgação de uma melhor imagem de nós mesmos, mas também o aprimoramento de nossas deficiências e o investimento em nossas qualidades (Ritossa, 2009). </p>
@@ -139,14 +140,14 @@
             </div>
           </div>
         </div>
-        <div class="bloco">
+        <div class="bloco bloco3 escuro">
           <div class="container">
             <h3>Propósito</h3>
             <p>Seja propósito de vida, seja propósito profissional, qual é o seu propósito? </p>
             <p>Propósito é um termo bastante utilizado para declarar aquilo em que se acredita e que verdadeiramente faz o coração bater mais forte. Não se trata somente de uma frase de efeito, mas sim da descrição de um objetivo superior, geralmente com objetivo social, destinado a melhorar a vida das pessoas e do planeta. Ele representa a razão de ser, a essência e a motivação que impulsionam ações e decisões. </p>
             <p>Entenda a seguir algumas perspectivas sobre o propósito:</p>
             <div class="no-print" aria-hidden="true">
-              <p>Clique ou toque para visualizar o conteúdo.</p>
+              <p class="branco">Clique ou toque para visualizar o conteúdo.</p>
               <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
                 <div class="panel panel-default">
                   <div class="panel-heading" role="tab" id="headingOne">
@@ -237,10 +238,12 @@
             <p>Conheça mais cada um deles:</p>
             <div class="no-print" aria-hidden="true">
               <p>Clique ou toque para visualizar o conteúdo.</p>
-              <button type="button" class="bt-missao" data-toggle="modal" data-target="#modal-missao"></button>
-              <button type="button" class="bt-visao" data-toggle="modal" data-target="#modal-visao"></button>
-              <button type="button" class="bt-valores" data-toggle="modal" data-target="#modal-valores"></button>
-              <button type="button" class="bt-golden" data-toggle="modal" data-target="#modal-golden"></button>
+              <div class="painel1">
+                <button type="button" class="bt-missao" data-toggle="modal" data-target="#modal-missao"></button>
+                <button type="button" class="bt-visao" data-toggle="modal" data-target="#modal-visao"></button>
+                <button type="button" class="bt-valores" data-toggle="modal" data-target="#modal-valores"></button>
+                <button type="button" class="bt-golden" data-toggle="modal" data-target="#modal-golden"></button>
+              </div>
             </div>
             <div class="modal fade" id="modal-missao" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-live="polite" aria-atomic="true" aria-hidden="true">
               <div class="modal-dialog" role="document">
@@ -306,7 +309,7 @@
                       </ul>
                       <div class="tab-content">
                         <div role="tabpanel" class="tab-pane active" id="valores-pessoais">
-                          <ul>
+                          <ul class="marcadores">
                             <li>Empatia: a habilidade de entender e compartilhar os sentimentos dos clientes é crucial. Isso ajuda a criar espaços que verdadeiramente refletem suas personalidades e necessidades. </li>
                             <li>Criatividade: inovação e originalidade são essenciais para criar <i>designs</i> únicos e impactantes. </li>
                             <li>Integridade: manter honestidade e transparência com clientes e equipes de trabalho fortalece a confiança e a reputação. </li>
@@ -315,7 +318,7 @@
                           </ul>
                         </div>
                         <div role="tabpanel" class="tab-pane" id="valores-profissionais">
-                          <ul>
+                          <ul class="marcadores">
                             <li>Profissionalismo: cumprir prazos e manter a ética de trabalho e a comunicação clara são fundamentais. </li>
                             <li>Qualidade: foco na excelência e atenção aos detalhes em cada projeto. </li>
                             <li>Adaptabilidade: capacidade de se ajustar às mudanças e evoluir conforme as tendências e necessidades do mercado. </li>
@@ -345,19 +348,13 @@
                     <p><i>Golden circle</i> é um conceito criado pelo especialista em liderança Simon Sinek, que ajuda uma pessoa a aprimorar seu desempenho dentro dos nichos nos quais ela atua. Fazendo uso dessa metodologia, é possível encontrar diferenciais para aplicar na sua rotina, aumentar seu leque de competitividade e afetar de forma positiva seus resultados. O modelo do <i>golden circle</i> foi concebido para sistematizar um novo método de pensar, agir e comunicar, com o intuito de criar impacto no mundo. </p>
                     <p>Esse conceito foi desenvolvido após extensas pesquisas sobre o comportamento de líderes e organizações de sucesso, nas quais Sinek notou padrões distintos que transcendem setores. </p>
                     <p>A base do <i>golden circle</i> é a ideia de que a maioria das companhias comunica do exterior para o interior, começando pelo “o quê” e avançando para o “como”. A proposta de Sinek é uma abordagem inversa mais eficaz: iniciar a comunicação pelo “por quê”, visando inspirar e conectar as pessoas de uma maneira mais profunda.</p>
-                    <div class="row">
-                      <div class="col-lg-3">
-                        <img src="imgs/" class="img-responsive center-block no-print" aria-hidden="true">
-                        <p class="legenda-imagem">
-                          Golden circle<br>
-                          Fonte: Senac EAD (2024)
-                        </p>
-                        <p class="acessivel no-print">Ilustração de uma forma semelhante a um alvo com três círculos, um dentro do outro, sob o título golden circle. No círculo externo está escrito “o quê?”, com uma seta apontando para o canto inferior direito da imagem, em que consta o texto: “o que você faz? Quais ações executa?”. No círculo mediano está “como?”, com uma seta apontando para a lateral da imagem, em que está o texto “como você faz o que faz?” Como é a operação?”. No círculo interno consta a descrição “por quê?”, com uma seta apontando para o canto superior direito da imagem com a seguinte descrição: “por que você faz o que faz? Qual é o propósito?”.</p>
-                      </div>
-                      <div class="col-lg-9">
-                        <p>A camada central “por quê” representa o coração da organização, o objetivo que a impulsiona. Esse é o núcleo do círculo e refere-se ao propósito ou à causa principal. É a crença ou a razão fundamental que motiva uma pessoa ou uma organização. Segundo Sinek, o "por quê" é a fonte de inspiração mais profunda e deve ser o ponto de partida para todas as ações e decisões.</p>
-                      </div>
-                    </div>
+                    <img src="imgs/fig_golden.jpg" class="img-responsive center-block no-print" aria-hidden="true">
+                    <p class="legenda-imagem">
+                      Golden circle<br>
+                      Fonte: Senac EAD (2024)
+                    </p>
+                    <p class="acessivel no-print">Ilustração de uma forma semelhante a um alvo com três círculos, um dentro do outro, sob o título golden circle. No círculo externo está escrito “o quê?”, com uma seta apontando para o canto inferior direito da imagem, em que consta o texto: “o que você faz? Quais ações executa?”. No círculo mediano está “como?”, com uma seta apontando para a lateral da imagem, em que está o texto “como você faz o que faz?” Como é a operação?”. No círculo interno consta a descrição “por quê?”, com uma seta apontando para o canto superior direito da imagem com a seguinte descrição: “por que você faz o que faz? Qual é o propósito?”.</p>
+                    <p>A camada central “por quê” representa o coração da organização, o objetivo que a impulsiona. Esse é o núcleo do círculo e refere-se ao propósito ou à causa principal. É a crença ou a razão fundamental que motiva uma pessoa ou uma organização. Segundo Sinek, o "por quê" é a fonte de inspiração mais profunda e deve ser o ponto de partida para todas as ações e decisões.</p>
                     <p>Em seguida, a camada intermediária “como” explora os métodos e valores adotados para concretizar esse propósito. Esse componente explica como uma organização implementa suas crenças ou seus valores fundamentais. São os processos, as ações e as estratégias exclusivas que distinguem o que uma organização faz diferente de suas concorrentes. </p>
                     <p>Por fim, a camada externa “o quê” descreve os produtos ou serviços tangíveis oferecidos pela organização. Enquanto todas as empresas sabem "o quê" fazem, Sinek argumenta que as empresas mais inspiradoras e bem-sucedidas começam com o "por quê" e estruturam suas atividades e campanhas em torno dessa inspiração central. </p>
                     <p>A metodologia busca transformar a maneira como as organizações se comunicam, destacando a importância de inspirar antes de vender e criando uma conexão mais significativa com clientes e colaboradores. </p>
@@ -412,7 +409,7 @@
               <p><i>Golden circle</i> é um conceito criado pelo especialista em liderança Simon Sinek, que ajuda uma pessoa a aprimorar seu desempenho dentro dos nichos nos quais ela atua. Fazendo uso dessa metodologia, é possível encontrar diferenciais para aplicar na sua rotina, aumentar seu leque de competitividade e afetar de forma positiva seus resultados. O modelo do <i>golden circle</i> foi concebido para sistematizar um novo método de pensar, agir e comunicar, com o intuito de criar impacto no mundo. </p>
               <p>Esse conceito foi desenvolvido após extensas pesquisas sobre o comportamento de líderes e organizações de sucesso, nas quais Sinek notou padrões distintos que transcendem setores. </p>
               <p>A base do <i>golden circle</i> é a ideia de que a maioria das companhias comunica do exterior para o interior, começando pelo “o quê” e avançando para o “como”. A proposta de Sinek é uma abordagem inversa mais eficaz: iniciar a comunicação pelo “por quê”, visando inspirar e conectar as pessoas de uma maneira mais profunda.</p>
-              <img src="imgs/" class="img-responsive center-block">
+              <img src="imgs/fig_golden.jpg" class="img-responsive center-block">
               <p class="legenda-imagem">
                 Golden circle<br>
                 Fonte: Senac EAD (2024)
@@ -425,14 +422,14 @@
             </div>
           </div>
         </div>
-        <div class="bloco">
+        <div class="bloco bloco4">
           <div class="container">
             <h3>Marca</h3>
             <p>Para Angonese <i>et al.</i> (2024), “marca é o que as pessoas dizem sobre você, quando você não está no quarto”. Já ouviu essa expressão? </p>
             <p>A marca é muito mais do que um simples nome ou logotipo; é uma combinação de elementos tangíveis e intangíveis que representam uma empresa, um produto, um serviço ou uma pessoa. Confira a seguir um detalhamento de suas facetas principais: </p>
             <p class="no-print" aria-hidden="true">Clique ou passe o <i>mouse</i> para virar as cartas.</p>
-            <div class="row">
-              <div class="flip-card col-lg-4">
+            <div class="cards">
+              <div class="flip-card">
                 <div class="flip-card-inner">
                   <div class="flip-card-front">
                     <h4>Identidade visual</h4>
@@ -444,7 +441,7 @@
                   </div>
                 </div>
               </div>
-              <div class="flip-card col-lg-4">
+              <div class="flip-card">
                 <div class="flip-card-inner">
                   <div class="flip-card-front">
                     <h4>Imagem da marca</h4>
@@ -455,7 +452,7 @@
                   </div>
                 </div>
               </div>
-              <div class="flip-card col-lg-4">
+              <div class="flip-card">
                 <div class="flip-card-inner">
                   <div class="flip-card-front">
                     <h4>Valores e missão</h4>
@@ -466,7 +463,7 @@
                   </div>
                 </div>
               </div>
-              <div class="flip-card col-lg-4">
+              <div class="flip-card">
                 <div class="flip-card-inner">
                   <div class="flip-card-front">
                     <h4>Experiência do cliente</h4>
@@ -477,7 +474,7 @@
                   </div>
                 </div>
               </div>
-              <div class="flip-card col-lg-4">
+              <div class="flip-card">
                 <div class="flip-card-inner">
                   <div class="flip-card-front">
                     <h4>Narrativa e história</h4>
@@ -488,7 +485,7 @@
                   </div>
                 </div>
               </div>
-              <div class="flip-card col-lg-4">
+              <div class="flip-card">
                 <div class="flip-card-inner">
                   <div class="flip-card-front">
                     <h4>Associações e diferenciação</h4>
@@ -505,8 +502,10 @@
             <p>Para ilustrar como esses elementos se manifestam no mundo real, considere dois exemplos de marcas bem-sucedidas:</p>
             <div class="no-print" aria-hidden="true">
               <p>Clique ou toque para visualizar o conteúdo.</p>
-              <button type="button" class="bt-apple" data-toggle="modal" data-target="#modal-apple"></button>
-              <button type="button" class="bt-nike" data-toggle="modal" data-target="#modal-nike"></button>
+              <div class="painel2">
+                <button type="button" class="bt-apple" data-toggle="modal" data-target="#modal-apple"></button>
+                <button type="button" class="bt-nike" data-toggle="modal" data-target="#modal-nike"></button>
+              </div>
             </div>
             <div class="modal fade" id="modal-apple" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-live="polite" aria-atomic="true" aria-hidden="true">
               <div class="modal-dialog" role="document">
@@ -522,12 +521,12 @@
                     <p>Experiência do cliente: atendimento excelente ao cliente, produtos que oferecem uma experiência integrada </p>
                     <p>Narrativa e história: criação em uma garagem, trajeto de Steve Jobs e a revolução tecnológica </p>
                     <p>Associações e diferenciação: público-alvo sofisticado e exigente, posicionamento como marca <i>premium</i></p>
-                    <img src="imgs/imagem.png" class="center-block img-responsive hidden-sm hidden-xs print">
+                    <img src="imgs/fig01.jpg" class="center-block img-responsive hidden-sm hidden-xs print">
                     <p class="no-print visible-sm visible-xs" aria-hidden="true">Toque na imagem para ampliá-la.</p>
-                    <a href="imgs/imagem.png" target="_blank" class="no-print visible-sm visible-xs" aria-hidden="true"><img src="imgs/imagem.png" class="center-block img-responsive"></a>
+                    <a href="imgs/fig01.jpg" target="_blank" class="no-print visible-sm visible-xs" aria-hidden="true"><img src="imgs/fig01.jpg" class="center-block img-responsive"></a>
                     <p class="legenda-imagem">
                       Produtos da marca Apple<br>
-                      Fonte: Jamil apud Spadoni (2024)
+                      Fonte: Jamil <i>apud</i> Spadoni (2024)
                     </p>
                   </div>
                   <div class="modal-footer">
@@ -550,9 +549,9 @@
                     <p>Experiência do cliente: produtos de alto desempenho e campanhas inspiradoras </p>
                     <p>Narrativa e história: história de superação e inovação constante </p>
                     <p>Associações e diferenciação: foco em atletas e entusiastas do esporte, posicionamento como líder em inovação esportiva</p>
-                    <img src="imgs/imagem.png" class="center-block img-responsive hidden-sm hidden-xs print">
+                    <img src="imgs/fig02.png" class="center-block img-responsive hidden-sm hidden-xs print">
                     <p class="no-print visible-sm visible-xs" aria-hidden="true">Toque na imagem para ampliá-la.</p>
-                    <a href="imgs/imagem.png" target="_blank" class="no-print visible-sm visible-xs" aria-hidden="true"><img src="imgs/imagem.png" class="center-block img-responsive"></a>
+                    <a href="imgs/fig02.png" target="_blank" class="no-print visible-sm visible-xs" aria-hidden="true"><img src="imgs/fig02.png" class="center-block img-responsive"></a>
                     <p class="legenda-imagem">
                       Análise do logotipo da Nike<br>
                       Fonte: Ronan (2022)
@@ -573,7 +572,7 @@
               <p>Experiência do cliente: atendimento excelente ao cliente, produtos que oferecem uma experiência integrada </p>
               <p>Narrativa e história: criação em uma garagem, trajeto de Steve Jobs e a revolução tecnológica </p>
               <p>Associações e diferenciação: público-alvo sofisticado e exigente, posicionamento como marca <i>premium</i></p>
-              <img src="imgs/imagem.png" class="center-block img-responsive print">
+              <img src="imgs/fig01.jpg" class="center-block img-responsive print">
               <p class="legenda-imagem">
                 Produtos da marca Apple<br>
                 Fonte: Jamil apud Spadoni (2024)
@@ -586,7 +585,7 @@
               <p>Experiência do cliente: produtos de alto desempenho e campanhas inspiradoras </p>
               <p>Narrativa e história: história de superação e inovação constante </p>
               <p>Associações e diferenciação: foco em atletas e entusiastas do esporte, posicionamento como líder em inovação esportiva</p>
-              <img src="imgs/imagem.png" class="center-block img-responsive print">
+              <img src="imgs/fig02.png" class="center-block img-responsive print">
               <p class="legenda-imagem">
                 Análise do logotipo da Nike<br>
                 Fonte: Ronan (2022)
@@ -600,7 +599,7 @@
             <p>Construir e gerir de maneira eficaz uma marca, seja pessoal, seja corporativa, é um trabalho contínuo que requer atenção aos detalhes, planejamento estratégico e uma dedicação intensa à entrega de valor e autenticidade. </p>
           </div>
         </div>
-        <div class="bloco">
+        <div class="bloco bloco5 escuro">
           <div class="container">
             <h3>Matriz SWOT</h3>
             <p>Sun Tzu <i>apud</i> Tarapanoff (<i>apud</i> Mello, 2020) aconselha: “Concentre-se nos pontos fortes, reconheça as fraquezas, agarre as oportunidades e proteja-se contra as ameaças”. </p>
@@ -644,13 +643,18 @@
               <p>“Ameaças” são fatores externos negativos, como concorrência acirrada, mudanças no mercado, crises econômicas, legislação desfavorável, que representam riscos e desafios para a empresa ou indivíduo.</p>
             </div>
             <p>Mas você deve estar se perguntando por que deve aprender matriz SWOT se pretende trabalhar como profissional autônomo ou como colaborador de uma empresa, não é mesmo?</p>
-            <div class="caixa-destaque-livre icone-refletir">
+            <div class="caixa-destaque-livre icone-para-refletir">
               <p>Saiba que realizar uma análise SWOT pessoal como <i>designer</i> de interiores pode ser muito útil para identificar habilidades, pontos fortes, áreas de melhoria, oportunidades de crescimento e possíveis ameaças ao seu sucesso profissional. Ao fazer uma análise honesta e profunda de si mesmo, o <i>designer</i> pode encontrar <i>insights</i> valiosos que podem ajudá-lo a definir metas, planejar sua carreira e tomar decisões estratégicas para alcançar seus objetivos.</p>
             </div>
             <p>Além disso, a análise SWOT pessoal pode ajudá-lo, enquanto <i>designer</i>, a se destacar no mercado e se diferenciar da concorrência, aproveitando suas vantagens competitivas e trabalhando em seus pontos fracos. Ao ter uma compreensão clara de suas próprias capacidades e limitações, você pode direcionar seus esforços para áreas nas quais pode realmente se destacar e crescer profissionalmente. </p>
             <p>Confira agora o exemplo de uma análise SWOT pessoal para um <i>designer</i> de interiores:</p>
-            <!--aqui vai infográfico-->
-            <div class="acessivel no-print">
+            <div class="info1 no-print" aria-hidden="true">
+              <img src="imgs/info_FOFA1.png">
+              <img src="imgs/info_FOFA2.png">
+              <img src="imgs/info_FOFA3.png">
+              <img src="imgs/info_FOFA4.png">
+            </div>
+            <div class="acessivel print">
               <p><b>Forças</b></p>
               <p>Criatividade e originalidade no <i>design</i> de interiores</p>
               <p>Habilidades técnicas sólidas em <i>software</i> de <i>design</i></p>
@@ -676,7 +680,7 @@
             <p>Como já mencionado, ao realizar e revisar regularmente sua análise SWOT pessoal, o <i>designer</i> de interiores pode identificar áreas de melhoria, explorar novas oportunidades, mitigar ameaças e utilizar suas forças para se destacar no mercado e alcançar sucesso em sua carreira.</p>
           </div>
         </div>
-        <div class="bloco">
+        <div class="bloco bloco6">
           <div class="container">
             <h3>Mercado consumidor (análise, perfil, segmentação e inserção)</h3>
             <p>Mercado consumidor refere-se ao conjunto de todos os compradores reais e potenciais de um produto ou serviço. Esses consumidores têm necessidades e desejos que as empresas buscam atender por meio de suas ofertas de mercado. O mercado consumidor é fundamental para a economia, pois é nele que demanda pelos produtos e serviços se manifesta, incentivando a produção e a inovação.</p>
@@ -687,41 +691,25 @@
             <p>Mas como se deve fazer uma análise de mercado? Essa análise envolve etapas importantes que ajudam a entender o ambiente em que um negócio funciona. Veja, a seguir, o passo a passo para realizar uma análise de mercado eficaz:</p>
             <div class="no-print" aria-hidden="true">
               <p>Clique ou toque para visualizar o conteúdo.</p>
-              <button type="button" class="bt-definicao" data-toggle="modal" data-target="#modal-definicao">1. Definição do objeto da análise</button>
-              <button type="button" class="bt-pesquisa" data-toggle="modal" data-target="#modal-pesquisa">2. Pesquisa de dados</button>
-              <button type="button" class="bt-externo" data-toggle="modal" data-target="#modal-externo">3. Análise do ambiente externo (análise Pestel)</button>
-              <button type="button" class="bt-concorrencia" data-toggle="modal" data-target="#modal-concorrencia">4. Análise da concorrência</button>
-              <button type="button" class="bt-consumidor" data-toggle="modal" data-target="#modal-consumidor">5. Análise do consumidor</button>
-              <button type="button" class="bt-swot" data-toggle="modal" data-target="#modal-swot">6. Análise SWOT</button>
-              <button type="button" class="bt-projecao" data-toggle="modal" data-target="#modal-projecao">7. Projeção e previsão</button>
-              <button type="button" class="bt-estrategia" data-toggle="modal" data-target="#modal-estrategia">8. Estratégia de <i>marketing</i></button>
-              <button type="button" class="bt-acao" data-toggle="modal" data-target="#modal-acao">9. Plano de ação e implementação</button>
-              <button type="button" class="bt-monitoramento" data-toggle="modal" data-target="#modal-monitoramento">10. Monitoramento e avaliação</button>
+              <div class="painel3">
+                <button type="button" class="bt-definicao" data-toggle="modal" data-target="#modal-definicao"></button>
+                <button type="button" class="bt-externo" data-toggle="modal" data-target="#modal-externo"></button>
+                <button type="button" class="bt-consumidor" data-toggle="modal" data-target="#modal-consumidor"></button>
+                <button type="button" class="bt-projecao" data-toggle="modal" data-target="#modal-projecao"></button>
+                <button type="button" class="bt-acao" data-toggle="modal" data-target="#modal-acao"></button>
+              </div>
             </div>
             <div class="modal fade" id="modal-definicao" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-live="polite" aria-atomic="true" aria-hidden="false">
               <div class="modal-dialog" role="document">
                 <div class="modal-content">
                   <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title" id="myModalLabel">1. Definição do objeto da análise</h4>
+                    <h4 class="modal-title" id="myModalLabel">1. Definição do objeto da análise e Pesquisa de dados</h4>
                   </div>
                   <div class="modal-body">
+                    <h4>Definição do objeto da análise</h4>
                     <p>Determine o objetivo da análise de mercado. Pode ser para entender a viabilidade de um novo produto, a entrada em um novo mercado ou a avaliação do desempenho atual.</p>
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="modal fade" id="modal-pesquisa" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-live="polite" aria-atomic="true" aria-hidden="false">
-              <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title" id="myModalLabel">2. Pesquisa de dados</h4>
-                  </div>
-                  <div class="modal-body">
+                    <h4>Pesquisa de dados</h4>
                     <p>Os dados primários são aqueles coletados diretamente do mercado-alvo por meio de entrevistas, questionários, grupos de foco e observações. Os dados secundários são informações já disponíveis, como relatórios de mercado, publicações da indústria, dados do governo e estudos acadêmicos.</p>
                   </div>
                   <div class="modal-footer">
@@ -735,9 +723,10 @@
                 <div class="modal-content">
                   <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title" id="myModalLabel">3. Análise do ambiente externo (análise Pestel)</h4>
+                    <h4 class="modal-title" id="myModalLabel">2. Análise do ambiente externo (análise Pestel) e Análise da concorrência</h4>
                   </div>
                   <div class="modal-body">
+                    <h4>Análise do ambiente externo (análise Pestel)</h4>
                     <p>Pestel é um acrônimo que se refere aos seguintes aspectos: </p>
                     <p>Político: políticas governamentais, estabilidade política, regulamentações </p>
                     <p>Econômico: taxa de crescimento econômico, taxas de juros, inflação, desemprego </p>
@@ -745,21 +734,7 @@
                     <p>tecnológico: inovações, pesquisa e desenvolvimento (P&D), tecnologia emergente </p>
                     <p>Ecológico: leis ambientais, sustentabilidade, mudanças climáticas </p>
                     <p>Legislativo: regulamentações específicas do setor, normas de comércio</p>
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="modal fade" id="modal-concorrencia" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-live="polite" aria-atomic="true" aria-hidden="false">
-              <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title" id="myModalLabel">4. Análise da concorrência</h4>
-                  </div>
-                  <div class="modal-body">
+                    <h4>Análise da concorrência</h4>
                     <p>Identifique os principais concorrentes e analise seus pontos fortes e fracos, estratégias de <i>marketing</i>, preços, distribuição e produtos/serviços oferecidos.</p>
                   </div>
                   <div class="modal-footer">
@@ -773,27 +748,14 @@
                 <div class="modal-content">
                   <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title" id="myModalLabel">5. Análise do consumidor</h4>
+                    <h4 class="modal-title" id="myModalLabel">3. Análise do consumidor e Análise SWOT</h4>
                   </div>
                   <div class="modal-body">
+                    <h4>Análise do consumidor</h4>
                     <p>Segmentação de mercado: divida o mercado em segmentos com base em critérios demográficos, psicográficos, geográficos e comportamentais. </p>
                     <p><i>Persona</i> do consumidor: crie perfis detalhados dos seus clientes ideais. </p>
                     <p>Necessidades e desejos dos consumidores: identifique problemas e desejos não satisfeitos no mercado. </p>
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="modal fade" id="modal-swot" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-live="polite" aria-atomic="true" aria-hidden="false">
-              <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title" id="myModalLabel">6. Análise SWOT</h4>
-                  </div>
-                  <div class="modal-body">
+                    <h4>Análise SWOT</h4>
                     <p><i>Strengths</i> (forças/pontos fortes): internos, vantagens sobre a concorrência </p>
                     <p><i>Weaknesses</i> (fraquezas/pontos fracos): internos, deficiências comparadas à concorrência </p>
                     <p><i>Opportunities</i> (oportunidades): externos, tendências e condições favoráveis para o crescimento </p>
@@ -810,25 +772,12 @@
                 <div class="modal-content">
                   <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title" id="myModalLabel">7. Projeção e previsão</h4>
+                    <h4 class="modal-title" id="myModalLabel">4. Projeção e previsão e Estratégia de <i>marketing</i></h4>
                   </div>
                   <div class="modal-body">
+                    <h4>Projeção e previsão</h4>
                     <p>Utilize dados coletados para fazer projeções de mercado, estimativas de vendas e previsões financeiras. Ferramentas quantitativas como análise de regressão e modelagem preditiva podem ser úteis aqui.</p>
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="modal fade" id="modal-estrategia" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-live="polite" aria-atomic="true" aria-hidden="false">
-              <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title" id="myModalLabel">8. Estratégia de <i>marketing</i></h4>
-                  </div>
-                  <div class="modal-body">
+                    <h4>Estratégia de <i>marketing</i></h4>
                     <p>Desenvolvimento de estratégias com base nas informações coletadas, definindo posicionamento de mercado, <i>mix</i> de <i>marketing</i> (produto, preço, praça e promoção) e táticas para atingir os objetivos comerciais.</p>
                   </div>
                   <div class="modal-footer">
@@ -842,25 +791,12 @@
                 <div class="modal-content">
                   <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title" id="myModalLabel">9. Plano de ação e implementação</h4>
+                    <h4 class="modal-title" id="myModalLabel">5. Plano de ação e implementação e Monitoramento e avaliação</h4>
                   </div>
                   <div class="modal-body">
+                    <h4>Plano de ação e implementação</h4>
                     <p>Crie um plano detalhado para implementar as estratégias propostas, com prazos específicos, recursos necessários e responsáveis por cada tarefa.</p>
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="modal fade" id="modal-monitoramento" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-live="polite" aria-atomic="true" aria-hidden="false">
-              <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title" id="myModalLabel">10. Monitoramento e avaliação</h4>
-                  </div>
-                  <div class="modal-body">
+                    <h4>Monitoramento e avaliação</h4>
                     <p>Acompanhe regularmente as métricas de desempenho para avaliar a eficácia das estratégias implementadas e faça ajustes conforme necessário.</p>
                   </div>
                   <div class="modal-footer">
