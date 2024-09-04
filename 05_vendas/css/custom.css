@@ -3,9 +3,11 @@ html {
 }
 
 body {
-  background: url("../imgs/bg.jpg") no-repeat;
+  background-image: url('../imgs/bg-flutuante01.png'), url('../imgs/bg-flutuante02.png'), url("../imgs/bg.jpg");
+  background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: cover;
+  background-size: 12%, 12%, cover;
+  background-position: left 30px top 200px, right 30px top 400px, center center;
 }
 
 .mob-m {
@@ -503,6 +505,16 @@ table.senac td {
   transition: all .4s;
 }
 .painel4 button:hover{transform: scale(1.1);}
+
+@media (max-width: 1360px){
+  body {
+    background-image: url("../imgs/bg.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+  }
+}
 
 @media (max-width:1100px) {
   .menu-btn {
