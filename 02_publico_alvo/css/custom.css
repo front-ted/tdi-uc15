@@ -1,0 +1,777 @@
+@font-face {
+  font-family: sourcesans-regular;
+  src: url("../fonts/SourceSansPro-Regular.ttf");
+}
+@font-face {
+  font-family: sourcesans-bold;
+  src: url("../fonts/SourceSansPro-Bold.ttf");
+}
+
+
+body{
+  background: url("../imgs/bg.jpg") no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+
+.pagina .container{
+  padding: 30px 40px;
+  /*
+  border-radius: 15px;
+  background-color: #FFF;
+  filter: drop-shadow(#949494 0px 4px 4px);
+  */
+}
+
+.margem-botao{
+  margin-top: 140px;
+  margin-bottom: -60px;
+}
+.grupo-imprimir button.bto-imprimir{
+  z-index: 200;
+}
+
+.caixa-destaque, .caixa-destaque-livre{
+  background-color: #91372D;
+  color: #fff;
+  margin: 50px auto;
+}
+
+li::marker {
+  font-size: 2.0em;
+  font-family: 'robotoregular', Arial, Verdana, Helvetica;
+  margin-bottom: 2em;
+  color: #2A8080;
+  /* margin-left: 1.7em; */
+}
+
+.img-maior2 {
+  width: auto !important;
+}
+
+h2, h3, h4 {
+  color: #333;
+  font-family: 'robotoregular', Arial , Verdana, Helvetica !important;
+  font-weight: bold;
+}
+
+
+/*--------- GAITINHA ---------*/
+.panel {
+  background-color: transparent;
+  box-shadow: none;
+}
+.panel-default {
+  border: none;
+}
+.panel-heading {
+  background-color: #80392C !important;
+  border-radius: 25px;
+  padding: 15px 30px;
+}
+.panel-heading h3 {
+  color: #fff !important;
+  font-size: 20px;
+}
+.panel-group .panel-heading+.panel-collapse>.list-group,
+.panel-group .panel-heading+.panel-collapse>.panel-body {
+  border: none;
+  border-left: #80392C solid 5px;
+  margin-left: 30px;
+  padding-right: 40px;
+}
+/*--------- /GAITINHA ---------*/
+
+/*--------- SLIDESHOW ---------*/
+.carousel {
+  margin: 40px auto;
+  background-color: #2A8080;
+  border-radius: 30px;
+  width: 680px;
+  padding: 40px 0px;
+}
+.carousel-inner{
+  margin: auto;
+}
+.carousel-inner img{
+  margin: 0 auto;
+  filter: none;
+  width: 600px;
+  height: 426px;
+}
+.carousel-inner p{
+  margin-bottom: 0;
+  color: #fff;
+}
+.carousel-control.left {
+  background: url("../imgs/seta_voltar.png") no-repeat center;
+  margin-left: -100px;
+}
+.carousel-control.left:hover {
+  background: url("../imgs/seta_voltar_hover.png") no-repeat center;
+}
+.carousel-control.right {
+  background: url("../imgs/seta_avancar.png") no-repeat center;
+  margin-right: -100px;
+}
+.carousel-control.right:hover {
+  background: url("../imgs/seta_avancar_hover.png") no-repeat center;
+}
+
+div.item div{
+  width: 600px;
+  height: 400px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.slide-img01{background: url('../imgs/fig07.jpg');}
+.slide-img02{background: url('../imgs/fig08.jpg');}
+.slide-img03{background: url('../imgs/fig09.jpg');}
+.slide-img04{background: url('../imgs/fig10.jpg');}
+.slide-img05{background: url('../imgs/fig11.jpg');}
+.slide-img06{background: url('../imgs/fig12.jpg');}
+/*--------- /SLIDESHOW ---------*/
+
+/*--------- PODCAST ---------*/
+.div-podcast {
+  margin: 50px auto;
+  width: 380px;
+}
+.div-podcast audio {
+  filter: drop-shadow(#565656 0px 0px 5px);
+  position: relative;
+}
+.ico-transcricao {
+  background: url('../../template/images/transcricao.png') no-repeat;
+  background-size: 100%;
+  border-radius: 100%;
+  width: 57px;
+  height: 57px;
+  margin: 0px;
+  cursor: pointer;
+  transition: all 0.2s;
+  position: relative;
+  float: right;
+}
+.ico-transcricao:hover {
+  transform: scale(1.06);
+}
+/*--------- /PODCAST ---------*/
+
+/*--------- ABAS ---------*/
+.painel-abas.caixa-destaque-livre{
+  background-color: #2A8080;
+}
+.nav-tabs a{
+  color: #fff;
+}
+.nav-tabs a:hover{
+  color: #333 !important;
+}
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover{
+  color: #333 !important;
+}
+
+h3.panel-title, .tab-content p{
+  color: #fff !important;
+}
+/*--------- /ABAS ---------*/
+
+/*-------- MODAIS --------*/
+.modal-100 .modal-content{
+  background: linear-gradient(0.40turn, #fff 40%, #5F9B99);
+  background-size: cover !important;
+  background-position: center !important;
+  background-attachment: fixed !important;
+}
+.modal-100 .modal-body .container{
+  background-color: transparent;
+  position: relative;
+  margin-bottom: 30px;
+  padding: 0px 60px;
+  border-radius: 20px;
+}
+.btn-fechar, .btn-default{
+  width: 120px;
+  height: 50px;
+  background-color: #80392C;
+  color: #fff;
+  font-weight: bold;
+}
+.btn-fechar::before, .btn-default::before{
+  content: 'Fechar';
+}
+.btn-fechar:hover, .btn-default:hover{
+  background-color: #2A8080;
+  color: #fff;
+}
+.btn-fechar{
+  position: relative;
+  margin: 40px auto;
+  display: block;
+}
+.ico-fechar{padding-top: 25px;}
+/*-------- /MODAIS --------*/
+
+/*-------- CARDS --------*/
+.flip-card {
+  background-color: transparent;
+  width: 280px;
+  height: 413px;
+  margin: 20px auto;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+  cursor: pointer;
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-back {
+  transform: rotateY(180deg);
+}
+/*-------- /CARDS --------*/
+
+/*-------- TABELA --------*/
+table.senac{
+  border: #80392C solid 2px;
+  margin-bottom: 0;
+}
+table.senac th{
+  background-color: #ac372d;
+}
+table.senac td{
+  background-color: #FFF;
+  color: #80392C;
+  border: #80392C solid 2px;
+  vertical-align: top;
+}
+/*-------- /TABELA --------*/
+
+.caixa-destaque{
+  background-color: #80392C;
+  color: #fff;
+  margin: 50px auto;
+}
+
+.caixa-destaque-livre{
+  background-color: #2A8080;
+  color: #fff;
+  margin: 50px auto;
+}
+
+.espera-video{
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  font-size: 20px;
+  color: #fff;
+  width: 640px;
+  height: 360px;
+  box-shadow: #333 5px 5px 6px;
+  background-color: #292929;
+  margin: 40px auto;
+  position: relative;
+  z-index: 5;
+}
+
+.video-youtube {
+  width: 640px;
+  height: 360px;
+  border-radius: 10px;
+  margin: 40px auto;
+  display: block;
+}
+
+.img-borda{
+  margin-top: 60px;
+  filter: drop-shadow(#D64C3C 16px -15px 0px);
+}
+
+.img-zoom{
+  display: table;
+  position: relative;
+  margin: 0px auto;
+  cursor: pointer;
+}
+.img-zoom::after{
+  content: url('../imgs/lupa.png');
+  display: block;
+  width: 95px;
+  height: 95px;
+  right: 5px;
+  bottom: 5px;
+  position: absolute;
+  filter: drop-shadow(#333 3px 3px 4px);
+}
+
+.img-fig01{
+  margin-top: 40px;
+}
+
+.div-info{
+  background-color: #b0d4d2;
+  padding: 10px 20px;
+  width: 90%;
+  margin: 40px auto;
+  display: none;
+}
+.img-info01{
+  margin-top: 20px !important;
+}
+.img-info02{
+  margin-top: 50px !important;
+}
+.linhas-info{
+  margin: 20px auto;
+}
+
+
+/*--------- PAINEL ALVO ---------*/
+
+.painel-alvo{
+  position: relative;
+  width: 90%;
+  margin: 60px auto 40px auto;
+}
+.quadro-alvo{
+  background: linear-gradient(0.40turn, #fff 60%, #fba49d);
+  width: 100%;
+  height: 440px;
+  position: relative;
+  border: #803a2f solid 6px;
+  filter: drop-shadow(#D64C3C 16px -15px 0px);
+  text-align: center;
+  padding-right: 360px;
+  padding-left: 0px !important;
+  padding-top: 30px;
+}
+.quadro-alvo button{
+  border: none;
+  width: 221px;
+  height: 130px;
+  transition: all 0.15s;
+  transform: scale(0.9);
+  margin: -9px;
+}
+.quadro-alvo button:hover{
+  transform: scale(0.95);
+}
+.btn-necessidades{background: url('../imgs/bt1.png') no-repeat center bottom;}
+.btn-especificidades{background: url('../imgs/bt2.png') no-repeat center bottom;}
+.btn-comportamento{background: url('../imgs/bt3.png') no-repeat center bottom;}
+.btn-perfis_clientes{background: url('../imgs/bt4.png') no-repeat center bottom;}
+.btn-criacao_persona{background: url('../imgs/bt5.png') no-repeat center bottom;}
+
+.img-alvo{
+  position: absolute;
+  right: -30px;
+  top: 50px;
+  width: 280px;
+  z-index: 15;
+}
+
+.img-dardos{
+  position: absolute;
+  z-index: 20;
+  visibility: hidden;
+}
+.img-dardo01{animation: mover-dardo1 0.9s forwards; visibility: visible;}
+.img-dardo02{animation: mover-dardo2 1s forwards; visibility: visible;}
+.img-dardo03{animation: mover-dardo3 1s forwards; visibility: visible;}
+.img-dardo04{animation: mover-dardo4 1s forwards; visibility: visible;}
+.img-dardo05{animation: mover-dardo5 1s forwards; visibility: visible;}
+
+@keyframes mover-dardo1 {
+  0% {
+    margin-top: 34px;
+    margin-left: 26px;
+  }
+
+  100% {
+    margin-top: 82px;
+    margin-left: 498px;
+    transform: rotate(25deg);
+  }
+}
+@keyframes mover-dardo2 {
+  0% {
+    margin-top: 39px;
+    margin-left: 233px;
+  }
+
+  100% {
+    margin-top: 125px;
+    margin-left: 475px;
+    transform: rotate(8deg);
+  }
+}
+@keyframes mover-dardo3 {
+  0% {
+    margin-top: 174px;
+    margin-left: 30px;
+  }
+
+  100% {
+    margin-top: 170px;
+    margin-left: 472px;
+    transform: rotate(-6deg);
+  }
+}
+@keyframes mover-dardo4 {
+  0% {
+    margin-top: 183px;
+    margin-left: 235px;
+  }
+
+  100% {
+    margin-top: 207px;
+    margin-left: 473px;
+    transform: rotate(-23deg);
+  }
+}
+@keyframes mover-dardo5 {
+  0% {
+    margin-top: 299px;
+    margin-left: 132px;
+  }
+
+  100% {
+    margin-top: 250px;
+    margin-left: 485px;
+    transform: rotate(-44deg);
+  }
+}
+
+/*--------- /PAINEL ALVO ---------*/
+
+
+@media screen and (max-width: 1500px) {
+  .pagina .container{
+    padding: 30px 60px;
+  }
+
+  @keyframes mover-dardo1 {
+    0% {
+      margin-top: 34px;
+      margin-left: 26px;
+    }
+  
+    100% {
+      margin-top: 82px;
+      margin-left: 468px;
+      transform: rotate(25deg);
+    }
+  }
+  @keyframes mover-dardo2 {
+    0% {
+      margin-top: 39px;
+      margin-left: 233px;
+    }
+  
+    100% {
+      margin-top: 125px;
+      margin-left: 445px;
+      transform: rotate(8deg);
+    }
+  }
+  @keyframes mover-dardo3 {
+    0% {
+      margin-top: 174px;
+      margin-left: 30px;
+    }
+  
+    100% {
+      margin-top: 170px;
+      margin-left: 442px;
+      transform: rotate(-6deg);
+    }
+  }
+  @keyframes mover-dardo4 {
+    0% {
+      margin-top: 183px;
+      margin-left: 235px;
+    }
+  
+    100% {
+      margin-top: 207px;
+      margin-left: 443px;
+      transform: rotate(-23deg);
+    }
+  }
+  @keyframes mover-dardo5 {
+    0% {
+      margin-top: 299px;
+      margin-left: 132px;
+    }
+  
+    100% {
+      margin-top: 250px;
+      margin-left: 455px;
+      transform: rotate(-44deg);
+    }
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .pagina .container{
+    padding-left: 120px;
+  }
+
+  .painel-alvo{
+    width: 790px;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .pagina .container{
+    padding-left: 140px;
+  }
+
+  .painel-alvo{
+    width: 790px;
+  }
+}
+
+@media screen and (max-width: 820px) {
+  .pagina .container{
+    padding: 30px;
+  }
+
+  .carousel-control.left {
+    margin-left: 0px;
+  }
+  .carousel-control.right {
+    margin-right: 0px;
+  }
+
+  .painel-alvo{
+    width: 100%;
+  }
+  .quadro-alvo{
+    height: auto;
+    padding-right: 295px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .quadro-alvo button{
+    transform: scale(0.8);
+    margin: -20px;
+  }
+  .img-alvo{
+    right: -35px;
+    top: 45px;
+    width: 230px;
+  }
+  @keyframes mover-dardo1 {
+    0% {
+      margin-top: 34px;
+      margin-left: 26px;
+    }
+  
+    100% {
+      margin-top: 52px;
+      margin-left: 408px;
+      transform: rotate(25deg);
+    }
+  }
+  @keyframes mover-dardo2 {
+    0% {
+      margin-top: 39px;
+      margin-left: 233px;
+    }
+  
+    100% {
+      margin-top: 95px;
+      margin-left: 385px;
+      transform: rotate(8deg);
+    }
+  }
+  @keyframes mover-dardo3 {
+    0% {
+      margin-top: 174px;
+      margin-left: 30px;
+    }
+  
+    100% {
+      margin-top: 140px;
+      margin-left: 382px;
+      transform: rotate(-6deg);
+    }
+  }
+  @keyframes mover-dardo4 {
+    0% {
+      margin-top: 183px;
+      margin-left: 235px;
+    }
+  
+    100% {
+      margin-top: 177px;
+      margin-left: 383px;
+      transform: rotate(-23deg);
+    }
+  }
+  @keyframes mover-dardo5 {
+    0% {
+      margin-top: 299px;
+      margin-left: 132px;
+    }
+  
+    100% {
+      margin-top: 220px;
+      margin-left: 395px;
+      transform: rotate(-44deg);
+    }
+  }
+
+}
+
+@media screen and (max-width: 480px) {
+
+  .modal-100 .modal-body{
+    padding: 0px;
+  }
+  .modal-100 .modal-body .container{
+    padding: 0px 20px;
+  }
+
+  .video-youtube, .espera-video {
+    width: 320px;
+    height: 180px;
+  }
+  .caixa-destaque, .caixa-destaque-livre {
+    width: 100%;
+    padding: 10px;
+  }
+  .container{width: 100%;}
+  .fundo-tecnicos {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .img-zoom::after {
+    content: url(../imgs/lupa.png);
+    display: block;
+    width: 95px;
+    height: 95px;
+    right: 0px;
+    bottom: -10px;
+    position: absolute;
+    filter: drop-shadow(#333 3px 3px 4px);
+    scale: 0.6;
+  }
+
+  .painel-alvo{
+    margin-top: 150px;
+  }
+  .quadro-alvo{
+    background: linear-gradient(0.100turn, #fff 50%, #eb867f);
+    filter: unset;
+    height: auto;
+    padding-right: 0px;
+    padding-top: 0px;
+    padding-bottom: 30px;
+  }
+  .quadro-alvo button{
+    transform: scale(1);
+    margin: 5px;
+  }
+  .img-alvo{
+    position: relative;
+    right: unset;
+    top: unset;
+    width: 180px;
+    margin: auto;
+    margin-top: -110px;
+    margin-bottom: 0px;
+    margin-left: 90px;
+  }
+  .img-dardos{
+    width: 216px;
+    margin-left: 65px;
+  }
+
+  @keyframes mover-dardo1 {
+    0% {
+      margin-top: 120px;
+    }
+  
+    100% {
+      margin-top: -100px;
+      margin-left: 15px;
+      transform: rotate(16deg);
+      width: 160px;
+    }
+  }
+  @keyframes mover-dardo2 {
+    0% {
+      margin-top: 260px;
+    }
+  
+    100% {
+      margin-top: -68px;
+      margin-left: 5px;
+      transform: rotate(5deg);
+      width: 160px;
+      left: unset;
+    }
+  }
+  @keyframes mover-dardo3 {
+    0% {
+      margin-top: 410px;
+    }
+  
+    100% {
+      margin-top: -35px;
+      margin-left: 0px;
+      transform: rotate(-5deg);
+      width: 160px;
+      left: unset;
+    }
+  }
+  @keyframes mover-dardo4 {
+    0% {
+      margin-top: 560px;
+    }
+  
+    100% {
+      margin-top: -3px;
+      margin-left: 2px;
+      transform: rotate(-23deg);
+      width: 160px;
+      left: unset;
+    }
+  }
+  @keyframes mover-dardo5 {
+    0% {
+      margin-top: 690px;
+    }
+  
+    100% {
+      margin-top: 25px;
+      margin-left: 7px;
+      transform: rotate(-38deg);
+      width: 160px;
+      left: unset;
+    }
+  }
+}
