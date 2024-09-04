@@ -11,7 +11,7 @@ $(document).ready(function(){
 
       if (scrollPos >= offsetTop - 70) {
         // Remove a classe 'active' de todos os itens do menu
-        $('.menu-topo-ul > li').removeClass('active');
+        $('.menu > li').removeClass('active');
         // Adiciona a classe 'active' ao item do menu correspondente à seção atual
         $('a[href="#' + sectionId + '"]').parent().addClass('active');
       }
