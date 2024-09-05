@@ -28,6 +28,11 @@ h3, h4, h5{color: #000;}
   background: url('../imgs/bg_bloco2.png') no-repeat left 20px top 50px / 12%;
   background-attachment: fixed;
 }
+img.sombra{
+  -webkit-box-shadow: 10px -10px 0px 0px rgba(214,77,61,1);
+  -moz-box-shadow: 10px -10px 0px 0px rgba(214,77,61,1);
+  box-shadow: 10px -10px 0px 0px rgba(214,77,61,1);
+}
 .espera-video {
   max-width: 600px;
   height: 400px;
