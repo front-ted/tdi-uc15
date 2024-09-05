@@ -11,6 +11,7 @@ h3, h4, h5{color: #000;}
   background-position: top right;
   background-attachment: fixed;
 }
+.grupo-imprimir{margin-top: 20px;}
 .bloco.escuro p, .bloco.escuro .container > ul li,
 .bloco.escuro .container > h2, .bloco.escuro .container > h3, .bloco.escuro .container > h4{
   color: #fff;
@@ -197,6 +198,7 @@ h3, h4, h5{color: #000;}
   font-size: 12px;
   padding: 10px;
   border: 3px solid #d64d3d;
+  background: #fff;
 }
 .flip-card-back p{margin-top: 0;}
 /*fim flip cards*/
@@ -296,17 +298,123 @@ h3, h4, h5{color: #000;}
 }
 .citacao *{font-size: 14px;}
 
+.info2{
+  background: #eefafa;
+  border: 2px solid #d64d3d;
+  padding: 10px;
+  margin: 60px auto;
+  max-width: 570px;
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.info2 img{margin: 0 20px;}
+.info2 p{max-width: 50%;}
+
+.bloco7{
+  background-color: #1A4948;
+  background-image:url('../imgs/bg_bloco7.png'), url('../imgs/bg_bloco6_7_8.png'), url('../imgs/bg_dir.png');
+  background-repeat: no-repeat;
+  background-position: right 20px top 50px, left 20px top 50px, top right;
+  background-size: 12%, 12%, auto;
+  background-attachment: fixed;
+}
+
+.painel4{
+  background: url('../imgs/curriculo.png') no-repeat;
+  width: 605px;
+  height: 796px;
+  margin: 50px auto;
+  padding-top: 220px;
+}
+.painel4 button{
+  background-color: transparent;
+  width: 100%;
+  height: 165px;
+  border:none;
+}
+.painel4 button:hover{
+  background-image: url('../imgs/curriculo_hover.png');
+  background-repeat: no-repeat;
+}
+.bt-estrutura{
+  background-position: left 22px top 35px;
+}
+.bt-detalhes{
+  background-position: left 22px top 55px;
+}
+.bt-formatacao{
+  background-position: left 22px top 35px;
+}
+
+.bloco8{
+  background-image: url('../imgs/bg_bloco6_7_8.png'), url('../imgs/bg_bloco8.png');
+  background-repeat: no-repeat;
+  background-position: left 20px top 50px, right 20px top 50px;
+  background-size: 15%;
+  background-attachment: fixed;
+}
+
+/*--------- PODCAST ---------*/
+.div-podcast {
+  margin: 50px auto;
+  max-width: 380px;
+}
+.div-podcast audio {
+  filter: drop-shadow(#565656 0px 0px 5px);
+  position: relative;
+}
+.ico-transcricao {
+  background: url('../../template/images/transcricao.png') no-repeat;
+  background-size: 100%;
+  border-radius: 100%;
+  width: 57px;
+  height: 57px;
+  margin: 0px;
+  cursor: pointer;
+  transition: all 0.2s;
+  position: relative;
+  float: right;
+}
+.ico-transcricao:hover {
+  transform: scale(1.06);
+}
+/*--------- /PODCAST ---------*/
+
 @media (max-width: 768px){
   .painel3{
-    background: none;
+    background: url('../imgs/painelescada_mobile_layout.jpg') no-repeat center;
     width: 100%;
+    height: 414px;
   }
-  .bt-definicao{background-image: url('../imgs/painel_escada_hover1.png');}
-  .bt-externo{background-image: url('../imgs/painel_escada_hover2.png');}
-  .bt-consumidor{background-image: url('../imgs/painel_escada_hover3.png');}
-  .bt-projecao{background-image: url('../imgs/painel_escada_hover4.png');}
-  .bt-acao{background-image: url('../imgs/painel_escada_hover5.png');}
+  .bt-definicao:hover{background: none;}
+  .bt-externo:hover{background: none;}
+  .bt-consumidor:hover{background: none;}
+  .bt-projecao:hover{background: none;}
+  .bt-acao:hover{background: none;}
 }
-@media (max-width: 480px){
-  
+@media (max-width: 580px){
+  .info2 p{max-width: 100%;}
+  .info2 img{
+    display: none;
+  }
+  .painel4{
+    background-size: contain;
+    width: 300px;
+    height: 590px;
+    padding-top: 410px;
+  }
+  .painel4 button{
+    width: 202px;
+    height: 63px;
+  }
+  .bt-estrutura, .bt-estrutura:hover{
+    background: url('../imgs/curriculo_bt1.png') no-repeat;
+  }
+  .bt-detalhes, .bt-detalhes:hover{
+    background: url('../imgs/curriculo_bt2.png') no-repeat;
+  }
+  .bt-formatacao, .bt-formatacao:hover{
+    background: url('../imgs/curriculo_bt3.png') no-repeat;
+  }
 }
