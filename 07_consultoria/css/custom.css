@@ -1,5 +1,6 @@
+#booklet{position: relative;}
 .pagina1{
-  padding-top: 130px;
+  padding: 130px 0;
   background-color: #fff;
   background-image: url('../imgs/pg1_bg1_esq.png'), url('../imgs/pg1_bg_dir.png'), url('../imgs/pg1_bg_pattern.png');
   background-repeat: no-repeat, no-repeat, repeat;
@@ -10,6 +11,13 @@
 header{
   position: absolute;
   top: 90px;
+  left:0;
+  right:0;
+  margin: auto;
+}
+footer{
+  position: absolute;
+  bottom: 20px;
   left:0;
   right:0;
   margin: auto;
@@ -78,4 +86,255 @@ img.sombra{
   -webkit-box-shadow: 10px -10px 0px 0px rgba(214,77,61,1);
   -moz-box-shadow: 10px -10px 0px 0px rgba(214,77,61,1);
   box-shadow: 10px -10px 0px 0px rgba(214,77,61,1);
+}
+
+.painel2{
+  background: url('../imgs/pg1_painel1.png') no-repeat;
+  width: 414px;
+  height: 416px;
+  margin: 50px auto;
+  position: relative;
+}
+.painel2 button{
+  position: absolute;
+  height: 115px;
+  width: 270px;
+  background-color: transparent;
+  border: none;
+}
+.bt-briefing{
+  transform: rotate(-30deg);
+  top: 20px;
+}
+.bt-desenvolvimento{
+  transform: rotate(54deg);
+  top: 78px;
+  right: -48px;
+}
+.bt-apresentacao{
+  transform: rotate(-32deg);
+  bottom: 26px;
+  right: -3px;
+}
+.bt-implementacao{
+  transform: rotate(54deg);
+  bottom: 70px;
+  left: -45px;
+}
+
+.pagina2{
+  background: url('../imgs/pg1_bg_pattern.png') repeat, linear-gradient(180deg, rgba(130,59,51,1) 0%, rgba(66,25,17,1) 100%);
+  background-attachment: fixed;
+  padding: 130px 0;
+}
+.pagina2 *{color: #fff;}
+.pagina2 .caixa-destaque-livre *{color: #000;}
+.caixa-destaque-livre{
+  border: 3px solid #000;
+  background-color: #fff;
+  border-radius: 0;
+  -webkit-box-shadow: 10px -10px 0px 0px rgba(214,77,61,1);
+  -moz-box-shadow: 10px -10px 0px 0px rgba(214,77,61,1);
+  box-shadow: 10px -10px 0px 0px rgba(214,77,61,1);
+  margin: 50px 0;
+}
+.prancheta{
+  position: relative;
+  padding: 60px 30px;
+  max-width: 80%;
+  margin: 70px auto;
+}
+.prancheta img{position: absolute;}
+.elemento1{
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: -45px;
+}
+.elemento2{
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  right: -97px;
+}
+.elemento3{
+  bottom: 100px;
+  right: -102px;
+}
+.elemento4{
+  bottom: -50px;
+  right: -102px;
+}
+.bt-download{
+  background: url('../imgs/bt_download.png') no-repeat;
+  width: 334px;
+  height: 154px;
+  display: block;
+  margin: 50px auto;
+  transition: all .4s;
+}
+.bt-download:hover{transform: scale(1.1);}
+.marcadores1 li, .marcadores2 li{
+  list-style-image: unset;
+  list-style-type: none;
+}
+.marcadores1 li{
+  background: url('../imgs/lista_marcador.svg') no-repeat left top;
+  background-size: 25px;
+  min-height: 35px;
+  padding-left: 35px;
+}
+.marcadores2 li{
+  background: url('../imgs/marcador.svg') no-repeat left top;
+  background-size: 25px;
+  min-height: 35px;
+  padding-left: 35px;
+}
+
+#carousel1 img{max-height: 500px;}
+.carousel-control {
+  opacity: 1;
+  background: none !important;
+}
+.carousel-control .glyphicon{color: #dc8067;}
+
+.painel3{
+  background: url('../imgs/pg2_painel1.png') no-repeat;
+  width: 950px;
+  height: 801px;
+  margin: 50px auto;
+  position: relative;
+}
+.painel3 button{
+  position: absolute;
+  height: 80px;
+  width: 230px;
+  background-color: transparent;
+  border: none;
+}
+.pagina2 .modal *{color: #000;}
+.bt-fixos{
+  top: 115px;
+  left: 168px;
+}
+.bt-variaveis{
+  top: 148px;
+  right: 211px;
+}
+.bt-hora{
+  top: 236px;
+  left: 219px;
+}
+.bt-lucro{
+  top: 296px;
+  right: 174px;
+}
+.bt-preco{
+  top: 403px;
+  right: 390px;
+}
+.bt-impostos{
+  bottom: 256px;
+  right: 124px;
+}
+.bt-final{
+  bottom: 75px;
+  right: 268px;
+}
+
+/*gaitinha*/
+.panel {
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.panel-default {
+  border: none;
+}
+
+.panel-heading {
+  background-color: #e83e31 !important;
+  border-radius: 25px;
+  padding: 15px 30px;
+}
+
+.panel-heading h4 a, .panel-heading h4 i{
+  color: #fff !important;
+}
+
+.panel-group .panel-heading+.panel-collapse>.list-group,
+.panel-group .panel-heading+.panel-collapse>.panel-body {
+  border: none;
+  border-left: #e83e31 solid 5px;
+  margin-left: 30px;
+  padding-right: 40px;
+}
+/* fim gaitinha*/
+
+.pagina3{
+  background: url('../imgs/pg3_fig3.jpg') no-repeat left 10px top 42% / 12%, url('../imgs/pg1_bg_pattern.png') repeat, linear-gradient(180deg, #004A49 0%, #092322 100%);
+  background-attachment: unset, fixed;
+  padding: 130px 0;
+}
+.pagina3 *{color: #fff;}
+.pagina3 .caixa-destaque-livre *, .tab-pane *{color: #000;}
+
+.espera-video {
+  max-width: 600px;
+  height: 400px;
+  box-shadow: #333 5px 5px 6px;
+  background-color: #000;
+  margin: 20px auto;
+  position: relative;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 30px;
+}
+
+@media (max-width: 1480px){
+  .pagina1{background-size: 10%, 10%, auto;}
+}
+@media (max-width: 1300px){
+  .pagina3{
+    background: url('../imgs/pg1_bg_pattern.png') repeat, linear-gradient(180deg, #004A49 0%, #092322 100%);
+    background-attachment: fixed;
+  }
+}
+@media (max-width: 1200px){
+  .pagina1{
+    background-color: #fff;
+    background-image: url('../imgs/pg1_bg_pattern.png');
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-size: unset;
+  }
+}
+@media (max-width: 990px){
+  .elemento1{top: -28px;}
+  .elemento2{
+    top: unset;
+    right: -23px;
+  }
+  .painel3{
+    background: url('../imgs/pg2_painel_mobile.png') no-repeat !important;
+    width: 313px;
+    height: 955px;
+    display: flex;
+    padding-top: 250px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .painel3 button{
+    position: unset;
+    margin-bottom: 13px;
+  }
+}
+@media (max-width: 480px){
+  .painel2{
+    transform: scale(.8);
+    margin: -50px;
+  }
 }
