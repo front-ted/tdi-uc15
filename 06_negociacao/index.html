@@ -21,8 +21,11 @@
   <link href="../template/css/magnific-popup.css" rel="stylesheet" />
   <!-- referencia ao arquivo css com estilos especificos da pagina -->
   <link href="css/custom.css" type="text/css" rel="stylesheet" />
+  <link href="css/associar-colunas.css" type="text/css" rel="stylesheet">
   <!-- css necessario para o print -->
-  <link href="../template/css/fa/css/font-awesome.min.css" type="text/css" rel="stylesheet" />
+  <link href="../template/css/fa/css/fontawesome.css" type="text/css" rel="stylesheet" />
+  <link href="../template/css/fa/css/brands.css" type="text/css" rel="stylesheet" />
+  <link href="../template/css/fa/css/solid.css" type="text/css" rel="stylesheet" />
   <link href="../template/css/print.css" type="text/css" rel="stylesheet" />
   <link href="../template/fonts/roboto.css" type="text/css" rel="stylesheet" />
 
@@ -186,10 +189,46 @@
           <p>Na atuação profissional de um <i>designer</i> de interiores, diversas situações comerciais de divergência podem surgir, sendo necessário ter habilidades de negociação e resolução de conflitos para gerenciar essas questões de maneira eficaz. </p>
           <p>Analise algumas situações e soluções para casos comerciais de divergência que podem ocorrer no dia a dia profissional de um <i>designer</i> de interiores.</p>
 
-          <p class="no-print" aria-hidden="true">Clique ou toque para visualizar o conteúdo.</p>
-          &lt;!--ATIVIDADE-->
-          
-          
+          <!--ATIVIDADE-->
+          <div class="no-print" aria-hidden="true">
+            <div class="caixa-destaque-livre">
+              <p><b>Clique</b> ou <b>toque</b> em um botão da coluna numerada e depois escolha um botão da coluna com o símbolo de <i class="fa fa-question"></i> com a opção que achar a mais correta.</p>
+              <div class="row div-associar_colunas">
+                <div class="col-12 col-sm-5 flexs coluna1">
+                  <button data-resp="1" class="item item1">
+                    <p><b>Situação</b>: O cliente considera o custo do serviço elevado e questiona o preço.</p>
+                  </button>
+                  <button data-resp="2" class="item item2">
+                    <p><b>Situação</b>: O cliente exige um prazo de entrega mais curto do que o inicialmente acordado ou há atrasos na entrega do projeto.</p>
+                  </button>
+                  <button data-resp="3" class="item item3">
+                    <p><b>Situação</b>: O cliente tem expectativas ou solicitações específicas que podem não ser práticas ou comprometer a estética ou a funcionalidade do <i>design</i>.</p>
+                  </button>
+                  <button data-resp="4" class="item item4">
+                    <p><b>Situação</b>: Durante a execução do projeto, o cliente solicita mudanças significativas que não estavam previstas no escopo inicial.</p>
+                  </button>
+                </div>
+                <div class="col-12 col-sm-7 flexs mt-3 coluna2">
+                  <button type="button" data-resp="1" class="resp resp1">
+                    <div class="txtacao"><i class="fa fa-question"></i></div>
+                    <p><b>Solução</b>: Apresentar o detalhamento dos custos envolvidos, incluindo materiais, mão de obra, tempo de trabalho e outros serviços adicionais. Explicar o valor agregado do serviço, como personalização, qualidade e durabilidade do <i>design</i>. Demonstrar projetos anteriores e depoimentos de clientes satisfeitos para evidenciar o valor proposto.</p>
+                  </button>
+                  <button type="button" data-resp="2" class="resp resp2">
+                    <div class="txtacao"><i class="fa fa-question"></i></div>
+                    <p><b>Solução</b>: Negociar prazos realistas, levando em consideração todas as etapas do projeto. Manter uma comunicação clara sobre o progresso e quaisquer imprevistos que possam causar atrasos. Se necessário, negociar cláusulas de penalidade por atrasos ou incentivos por entregas antecipadas para garantir o comprometimento de ambas as partes.</p>
+                  </button>
+                  <button type="button" data-resp="3" class="resp resp3">
+                    <div class="txtacao"><i class="fa fa-question"></i></div>
+                    <p><b>Solução</b>: Discutir detalhadamente as especificações desejadas pelo cliente e apresentar alternativas viáveis que atendam às suas necessidades sem comprometer o <i>design</i>. Negociar um meio-termo que satisfaça ambas as partes, explicando os benefícios e as limitações de cada opção.</p>
+                  </button>
+                  <button type="button" data-resp="4" class="resp resp4">
+                    <div class="txtacao"><i class="fa fa-question"></i></div>
+                    <p><b>Solução</b>: Reavaliar o escopo do trabalho e discutir os impactos das mudanças solicitadas em termos de custo, prazo e execução. Manter a transparência, estabelecendo um processo claro (datas para aprovação e número de alterações), negociar os termos das mudanças, incluindo ajustes financeiros e de cronograma, para garantir que ambas as partes estejam de acordo com as novas condições.</p>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
           <div class="acessivel print">
             <p>1)	<b>Situação</b>: O cliente considera o custo do serviço elevado e questiona o preço.</p>
             <p><b>Solução</b>: Apresentar o detalhamento dos custos envolvidos, incluindo materiais, mão de obra, tempo de trabalho e outros serviços adicionais. Explicar o valor agregado do serviço, como personalização, qualidade e durabilidade do <i>design</i>. Demonstrar projetos anteriores e depoimentos de clientes satisfeitos para evidenciar o valor proposto.</p>
@@ -358,6 +397,7 @@
   <script src="../template/js/highlight.min.js"></script>
   <script src="../template/js/parallax.min.js"></script>
   <script src="js/custom.js"></script>
+  <script src="js/associar-colunas.js"></script>
 
   <noscript>
     <style media="screen">

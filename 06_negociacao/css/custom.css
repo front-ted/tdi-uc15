@@ -369,66 +369,7 @@ table.senac td{
 .btn-negociacao_cooperativa{background: url('../imgs/bt_03.png') no-repeat;}
 
 
-/*-------- NOVOS CARDS --------*/
-.novo-card .card{
-  position: relative;
-  max-width: 400px;
-  margin: auto;
-}
-.novo-card .card .face {
-  width: 400px;
-  height: 200px;
-  transition: 0.4s;
-  cursor: pointer;
-}
-.novo-card .card .face.face1{
-  position: relative;
-  background: #2A8080;
-  color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 2;
-  transform: translateY(100px);
-}
-.novo-card .card:hover .face.face1{
-  background: #2A8080;
-  color: #fff;
-  transform: translateY(0px);
-}
-.novo-card .card .face.face1 .content {
-  opacity: 1;
-  transition: 0.4s;
-}
-.novo-card .card:hover .face.face1 .content {
-  opacity: 1;
-}
-.novo-card .card .face.face1 .content{
-  max-width: 360px;
-}
-.novo-card .card .face.face2{
-  position: relative;
-  background: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-  box-sizing: border-box;
-  filter: drop-shadow(#333 3px 3px 5px);
-  transform: translateY(-100px);
-}
-.novo-card .card:hover .face.face2{
-  transform: translateY(0);
-}
-.novo-card .card .face.face2 .content p {
-  margin: 0;
-  padding: 0;
-  color: #414141;
-  font-family: sourcesans-regular !important;
-  font-size: 15px;
-}
 
-/*-------- /NOVOS CARDS --------*/
 
 
 @media screen and (max-width: 820px) {
