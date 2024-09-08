@@ -1,0 +1,221 @@
+@font-face {
+  font-family: 'Playfair';
+  src: url('../Fonte/PlayfairDisplay-Regular.ttf');
+}
+body{background: #fff;}
+p{font-family: roboto;}
+h4,
+h3,
+h2 {
+  color: #4f7f7f;
+  font-weight: bold;
+}
+
+.panel-title > a {
+  color: #4f7f7f;
+}
+
+.panel-heading {
+  background-color: aliceblue !important;
+}
+
+.panel-group .panel-heading {
+  border: 2px solid #4f7f7f;
+}
+.panel-body{font-family: roboto;}
+.pagina .container{padding: 50px;}
+header {
+  margin-top: 81px;
+}
+
+.citacao {
+  padding-left: 40%;
+}
+
+.citacao p {
+  text-align: justify;
+}
+
+.flex {
+  display: flex;
+}
+
+.imagem1, .imagem2, .imagem3, .imagem4, .imagem5, .imagem6, .imagem7{
+  background-size: cover;
+  background-position: top center;
+  width: 868px;
+}
+.imagem1{background: url("../imgs/img01.jpg") no-repeat;}
+.imagem2{background: url("../imgs/img02.jpg") no-repeat;}
+.imagem3{background: url("../imgs/img03.jpg") no-repeat;}
+.imagem4{background: url("../imgs/img04.jpg") no-repeat;}
+.imagem5{background: url("../imgs/img05.jpg") no-repeat;}
+.imagem6{background: url("../imgs/img06.jpg") no-repeat;}
+.imagem7{background: url("../imgs/img07.jpg") no-repeat;}
+
+.divisao {
+  margin: 0px;
+  height: 5px;
+  background-color: #4f7f7f;
+}
+
+/*-------- MODAIS --------*/
+.modal-100 .modal-content{
+  background: url('../imgs/bg_modal.png') no-repeat;
+  background-size: cover !important;
+  background-position: center !important;
+  background-attachment: fixed !important;
+}
+.modal-100 .modal-body .container{
+  background-color: #fff;
+  position: relative;
+  margin-bottom: 30px;
+  padding: 0px 60px;
+  border-radius: 20px;
+}
+.btn-fechar, .btn-default{
+  width: 120px;
+  height: 50px;
+  background-color: #80392C;
+  color: #fff;
+  font-weight: bold;
+}
+.btn-fechar::before, .btn-default::before{
+  content: 'Fechar';
+}
+.btn-fechar:hover, .btn-default:hover{
+  background-color: #2A8080;
+  color: #fff;
+}
+.btn-fechar{
+  position: relative;
+  margin: 40px auto;
+  display: block;
+}
+.ico-fechar{padding-top: 25px;}
+/*-------- /MODAIS --------*/
+
+/*--------- GAITINHA ---------*/
+.panel {
+  background-color: transparent;
+  box-shadow: none;
+}
+.panel-default {
+  border: none;
+}
+.panel-heading {
+  background-color: #2A8080 !important;
+  border-radius: 25px;
+  padding: 15px 30px;
+}
+.panel-heading h3, .panel-heading a {
+  color: #fff !important;
+  font-size: 20px;
+}
+.panel-group .panel-heading+.panel-collapse>.list-group,
+.panel-group .panel-heading+.panel-collapse>.panel-body {
+  border: none;
+  border-left: #2A8080 solid 5px;
+  margin-left: 30px;
+  padding-right: 40px;
+}
+/*--------- /GAITINHA ---------*/
+
+.caixa-destaque{
+  background-color: #80392C;
+  color: #fff;
+  width: 80%;
+}
+.caixa-destaque-livre{
+  background-color: #80392C;
+  color: #fff;
+}
+
+.painel-prospeccao{
+  margin: 40px auto;
+  text-align: center;
+  position: relative;
+}
+.painel-prospeccao button{
+  width: 221px;
+  height: 181px;
+  margin: 10px;
+  border: none;
+  border-radius: 20px;
+  transition: all 0.2s;
+}
+.painel-prospeccao button:hover{
+  transform: scale(1.05);
+}
+.btn-pesquisa_online{background: url('../imgs/bt_01.png') no-repeat;}
+.btn-eventos{background: url('../imgs/bt_02.png') no-repeat;}
+.btn-referencias{background: url('../imgs/bt_03.png') no-repeat;}
+
+.painel-contato{
+  margin: 40px auto;
+  text-align: center;
+  position: relative;
+}
+.painel-contato button{
+  width: 220px;
+  height: 60px;
+  margin: 10px;
+  background-color: #fff;
+  border: #2A8080 solid 3px;
+  color: #2A8080;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 40px;
+  transition: all 0.2s;
+}
+.painel-contato button:hover{
+  transform: scale(1.05);
+  background-color: #2A8080;
+  color: #fff;
+}
+
+.painel-avaliacoes{
+  margin: 0px auto -40px auto;
+  text-align: center;
+  position: relative;
+}
+.painel-avaliacoes button{
+  width: 161px;
+  height: 191px;
+  margin: 10px;
+  border: none;
+  border-radius: 80px 80px 40px 40px;
+  transition: all 0.2s;
+}
+.painel-avaliacoes button:hover{
+  transform: scale(1.05);
+}
+.btn-qualidade{background: url('../imgs/bt_qualidade.png') no-repeat;}
+.btn-capacidade{background: url('../imgs/bt_capacidade.png') no-repeat;}
+.btn-relacionamento{background: url('../imgs/bt_relacionamento.png') no-repeat;}
+
+
+@media (max-width: 1000px) {
+  .imagem1, .imagem2, .imagem3, .imagem4, .imagem5, .imagem6, .imagem7 {
+    background: unset;
+    background-size: unset;
+    background-position: unset;
+    width: unset;
+  }
+}
+
+@media (max-width: 820px) {
+  .citacao {
+    padding-left: 30%;
+  }
+}
+
+@media (max-width: 480px) {
+  .citacao {
+    padding-left: 10%;
+  }
+
+  .caixa-destaque{
+    width: 100%;
+  }
+}
