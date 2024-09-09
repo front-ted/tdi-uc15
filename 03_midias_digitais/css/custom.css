@@ -19,6 +19,9 @@
   src: url("../fonts/Montserrat/Montserrat-SemiBold.ttf");
 }
 
+html {
+  scroll-behavior: smooth;
+}
 
 body{
   background: url("../imgs/bg.jpg") repeat;

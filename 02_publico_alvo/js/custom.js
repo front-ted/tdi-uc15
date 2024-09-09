@@ -28,7 +28,7 @@ $(".fundo-item").click(function(){
 
 $(document).ready(function () {
 
-    //localStorage.clear()
+    localStorage.clear()
 
     var btn_alvo_01;
     var btn_alvo_02;
