@@ -23,6 +23,7 @@
 body{
   background: url("../imgs/bg.jpg") repeat;
   background-position: top center;
+  background-color: #e8f2f3;
 }
 
 .pagina .container{
@@ -548,5 +549,7 @@ table.senac td{
     padding-left: 20%;
   }
 
-  
+  .painel-redes{
+    width: 100%;
+  }
 }
