@@ -5,7 +5,7 @@ body {
 }
 
 .container.referencias {
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: transparent;
   padding: 0px 30px;
   margin-top: 40px;
   margin-left: -50px;
@@ -19,6 +19,7 @@ body {
 * {
   font-family: 'robotoregular', Arial, Verdana, Helvetica;
   word-break: break-word;
+  color: #fff !important;
 }
 
 p {
