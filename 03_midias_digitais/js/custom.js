@@ -50,17 +50,46 @@ function dataHora(){
 //-------- CHECK PAINEL --------\\
 
 $(document).ready(function () {
-
-    $("#carga-bateria").addClass("fa-battery-full");
+    
     var bateria = 100;
     document.getElementById('nivel-bateria').innerHTML = bateria+"%";
 
+    $("#carga-bateria").addClass("fa-battery-full");
+
     setInterval(() => {
-        bateria = bateria - 1;
+
+        if(bateria <= 0){
+            bateria = 0;
+        }else{
+            bateria = bateria - 1;
+        }
+
+        if(bateria >= 76){
+            $("#carga-bateria").addClass("fa-battery-full");
+        }else if(bateria > 50 && bateria <= 75){
+            $("#carga-bateria").removeClass("fa-battery-full");
+            $("#carga-bateria").addClass("fa-battery-three-quarters");
+        }else if(bateria > 25 && bateria <= 50){
+            $("#carga-bateria").removeClass("fa-battery-three-quarters");
+            $("#carga-bateria").addClass("fa-battery-half");
+        }else if(bateria > 10 && bateria <= 25){
+            $("#carga-bateria").removeClass("fa-battery-half");
+            $("#carga-bateria").addClass("fa-battery-quarter");
+        }else if(bateria <= 10){
+            $("#carga-bateria").removeClass("fa-battery-quarter");
+            $("#carga-bateria").addClass("fa-battery-empty");
+        }else{
+            $("#carga-bateria").addClass("fa-battery-empty");
+        }
+
+        if(bateria <= 15){
+            $("#carga-bateria").css("color","#e84c3f");
+        }
+
         document.getElementById('nivel-bateria').innerHTML = bateria+"%";
+
     }, 60000)
 
-    
 
     //localStorage.clear()
 

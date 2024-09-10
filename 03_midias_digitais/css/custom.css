@@ -367,7 +367,6 @@ table.senac td{
   font-size: 20px;
 }
 #carga-bateria::before{
-  content: "\f240";
   position: absolute;
   bottom: 3px;
   right: 8px;
