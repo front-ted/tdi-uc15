@@ -377,7 +377,7 @@ table.senac td{
   text-align: center;
   margin: 10px auto 0px auto;
   background: rgba(255, 255, 255, 0.45);
-  border-radius: 20px;
+  border-radius: 30px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(6px);
   -webkit-backdrop-filter: blur(6px);
@@ -385,14 +385,20 @@ table.senac td{
 .icone-menu{
   background-color: #37c2c2;
   width: 60px;
-  height: 55px;
+  height: 60px;
   border-radius: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: auto;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
+  background-size: contain !important;
 }
+#ico-item1{background: url('../imgs/bt-menu1.png') no-repeat;}
+#ico-item2{background: url('../imgs/bt-menu2.png') no-repeat;}
+#ico-item3{background: url('../imgs/bt-menu3.png') no-repeat;}
+#ico-item4{background: url('../imgs/bt-menu4.png') no-repeat;}
+
 .nav-tabs i{
   font-size: 30px;
   color: #fff;
@@ -416,12 +422,12 @@ table.senac td{
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  transition: all 0.3s;
+  transition: all 0.2s;
 }
 .nav-tabs>li:hover{
   background: none !important;
   border: none;
-  transform: scale(1.05);
+  transform: scale(1.08);
 }
 
 .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover{
