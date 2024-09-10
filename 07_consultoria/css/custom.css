@@ -4,9 +4,9 @@
   background-color: #fff;
   background-image: url('../imgs/pg1_bg1_esq.png'), url('../imgs/pg1_bg_dir.png'), url('../imgs/pg1_bg_pattern.png');
   background-repeat: no-repeat, no-repeat, repeat;
-  background-position: left top, right bottom;
+  background-position: left top 80px, right bottom;
   background-size: 15%, 15%, auto;
-  background-attachment: fixed;
+  
 }
 header{
   position: absolute;
