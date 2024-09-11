@@ -101,7 +101,7 @@ $(document).ready(function () {
 
         document.getElementById('nivel-bateria').innerHTML = bateria+"%";
 
-    }, 60000)
+    }, 90000)
 
 });
 
