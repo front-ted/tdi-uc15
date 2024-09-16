@@ -88,7 +88,9 @@
     HTMLstring+='<head>\n';
     HTMLstring+='    <link href="../template/css/bootstrap.min.css" rel="stylesheet">\n';
     HTMLstring+='    <link href="../template/css/sncload.css" rel="stylesheet">\n';
-    HTMLstring+='    <link href="../template/css/fa/css/font-awesome.min.css" type="text/css" rel="stylesheet">\n';
+    HTMLstring+='    <link href="../template/css/fa/css/fontawesome.css" type="text/css" rel="stylesheet">\n';
+    HTMLstring+='    <link href="../template/css/fa/css/brands.css" type="text/css" rel="stylesheet">\n';
+    HTMLstring+='    <link href="../template/css/fa/css/solid.css" type="text/css" rel="stylesheet">\n';
     HTMLstring+='    <link href="../template/css/cores.css" type="text/css" media="all" rel="stylesheet">\n';
     HTMLstring+='    <link href="../template/css/leitor.css" type="text/css" media="all" rel="stylesheet">\n';
     HTMLstring+='    <link href="../template/css/print.css" type="text/css" rel="stylesheet">\n';
