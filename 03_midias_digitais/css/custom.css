@@ -483,11 +483,10 @@ table.senac td{
   position: relative;
 }
 .painel-pastas button{
-  width: 200px;
-  height: 60px;
-  margin: 15px;
+  width: 150px;
+  height: 124px;
+  margin: 20px;
   border: none;
-  border-radius: 20px;
   transition: all 0.3s;
   filter: drop-shadow(#a0a0a0 5px 5px 10px);
   background-size: cover;
@@ -496,6 +495,9 @@ table.senac td{
   transform: scale(1.02);
   filter: drop-shadow(#686868 8px 8px 10px);
 }
+.btn-branding{background: url('../imgs/bt_branding.png') no-repeat center;}
+.btn-marketing{background: url('../imgs/bt_mkt.png') no-repeat center;}
+.btn-seo{background: url('../imgs/bt_seo.png') no-repeat center;}
 
 .painel-metodos{
   text-align: center;
