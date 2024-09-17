@@ -44,12 +44,34 @@ footer{
 .bt-hibrida{background: url('../imgs/pg1_bt1.png') no-repeat;}
 .painel1 button:hover{transform: scale(1.1);}
 
+
+/*-------- MODAIS --------*/
 .modal-content{
   background-color: #fff;
   background-image: url('../imgs/pg1_bg_pattern.png');
   background-repeat: repeat;
   background-attachment: fixed;
 }
+.modal-footer button{
+  width: 120px;
+  height: 50px;
+  background-color: #80392C;
+  color: #fff !important;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+
+.modal-footer button:hover{
+  background-color: #2A8080;
+  color: #fff;
+}
+.modal-footer button{
+  position: relative;
+  margin: 40px auto;
+  display: block;
+}
+.ico-fechar{padding-top: 25px;}
+/*-------- /MODAIS --------*/
 
 /* painel abas */
 .tab-content {
