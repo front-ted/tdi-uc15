@@ -300,6 +300,7 @@ img.sombra{
 .citacao li{
   list-style-type: disc;
   list-style-image: none;
+  line-height: 14px;
 }
 .citacao *{font-size: 14px;}
 
