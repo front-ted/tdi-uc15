@@ -517,6 +517,13 @@ iframe,
   padding-left: 30% !important;
 }
 
+.citacao {
+  padding-left: 30% !important;
+}
+.citacao p{
+  font-size: 10pt !important;
+}
+
 @media print {
   .paginas {
     page-break-inside: avoid;
