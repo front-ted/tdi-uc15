@@ -92,9 +92,8 @@ h4 {
 
 /*--------- PODCAST ---------*/
 .div-podcast {
-  margin: 50px auto;
-  margin-left: 18%;
-  width: 380px;
+  margin: 50px;
+  max-width: 380px;
 }
 .div-podcast audio {
   filter: drop-shadow(#565656 0px 0px 5px);
@@ -106,12 +105,11 @@ h4 {
   border-radius: 100%;
   width: 57px;
   height: 57px;
-  margin-right: 60px;
+  margin: 0px;
   cursor: pointer;
   transition: all 0.2s;
   position: relative;
   float: right;
-  margin-top: 20%;;
 }
 .ico-transcricao:hover {
   transform: scale(1.06);
