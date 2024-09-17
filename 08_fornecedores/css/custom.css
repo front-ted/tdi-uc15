@@ -49,7 +49,7 @@ header {
 .imagem2{background: url("../imgs/img02.jpg") no-repeat;}
 .imagem3{background: url("../imgs/img03.jpg") no-repeat;}
 .imagem4{background: url("../imgs/img04.jpg") no-repeat;}
-.imagem5{background: url("../imgs/img05.jpg") no-repeat;}
+.imagem5{background: url("../imgs/img05.png") no-repeat;}
 .imagem6{background: url("../imgs/img06.jpg") no-repeat;}
 .imagem7{background: url("../imgs/img07.jpg") no-repeat;}
 
@@ -175,7 +175,7 @@ header {
 }
 
 .painel-avaliacoes{
-  margin: 0px auto -40px auto;
+  margin: 0px auto;
   text-align: center;
   position: relative;
 }

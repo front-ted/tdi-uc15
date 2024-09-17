@@ -39,9 +39,9 @@ footer{
   transition: all .4s;
   background-position: bottom center;
 }
-.bt-presencial{background: url('../imgs/pg1_bt1.png') no-repeat;}
+.bt-presencial{background: url('../imgs/pg1_bt3.png') no-repeat;}
 .bt-online{background: url('../imgs/pg1_bt2.png') no-repeat;}
-.bt-hibrida{background: url('../imgs/pg1_bt3.png') no-repeat;}
+.bt-hibrida{background: url('../imgs/pg1_bt1.png') no-repeat;}
 .painel1 button:hover{transform: scale(1.1);}
 
 .modal-content{

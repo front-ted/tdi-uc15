@@ -85,7 +85,8 @@ body {
 
 
 .grupo-imprimir button.bto-imprimir {
-  margin-top: 34px;
+  margin-top: 120px;
+  margin-bottom: -80px;
 }
 
 h1,
@@ -245,7 +246,10 @@ table.senac td {
 }
 
 .citacao {
-  padding-left: 81px;
+  padding-left: 30%;
+}
+.citacao p{
+  font-size: 10pt !important;
 }
 
 .modal-content {
@@ -525,19 +529,9 @@ table.senac td {
     margin-left: unset;
     margin-right: unset;
   }
+  
   .painel4{
-    background: none;
-    width: 100%;
-    height: auto;
-    margin: 50px auto;
-    padding-top: 0;
-    padding-left: 0;
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-  }
-  .painel4 button{
-    display: unset;
+    transform: scale(0.9);
   }
 
 }
@@ -604,6 +598,21 @@ table.senac td {
   }
   .painel3 button{font-size: 20px;}
 
+
+  .painel4{
+    background: none;
+    width: 100%;
+    height: auto;
+    margin: 50px auto;
+    padding-top: 0;
+    padding-left: 0;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  .painel4 button{
+    display: unset;
+  }
 }
 
 
@@ -635,4 +644,12 @@ table.senac td {
     height: 180px;
   }
 
+  .painel4 button{
+    border: #2A8080 solid 3px;
+    filter: drop-shadow(#a0a0a0 5px 5px 10px);
+  }
+  .painel4 button:hover{
+    transform: scale(1.02);
+    filter: drop-shadow(#686868 8px 8px 10px);
+  }
 }
