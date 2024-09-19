@@ -116,6 +116,42 @@ h4 {
 }
 /*--------- /PODCAST ---------*/
 
+/*-------- MODAIS --------*/
+.modal-100 .modal-content{
+  background: linear-gradient(0.40turn, #fff 40%, #5F9B99);
+  background-size: cover !important;
+  background-position: center !important;
+  background-attachment: fixed !important;
+}
+.modal-100 .modal-body .container{
+  background-color: transparent;
+  position: relative;
+  margin-bottom: 30px;
+  padding: 0px 60px;
+  border-radius: 20px;
+}
+.btn-fechar, .btn-default{
+  width: 120px;
+  height: 50px;
+  background-color: #80392C;
+  color: #fff;
+  font-weight: bold;
+}
+.btn-fechar::before, .btn-default::before{
+  content: 'Fechar';
+}
+.btn-fechar:hover, .btn-default:hover{
+  background-color: #2A8080;
+  color: #fff;
+}
+.btn-fechar{
+  position: relative;
+  margin: 40px auto;
+  display: block;
+}
+.ico-fechar{padding-top: 25px;}
+/*-------- /MODAIS --------*/
+
 
 .caixa-destaque{
   background-color: #80392C;

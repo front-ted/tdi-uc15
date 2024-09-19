@@ -51,7 +51,10 @@ img.sombra{
 .video-youtube {
   width: 640px;
   height: 360px;
-  border-radius: 10px;
+  margin: 40px auto;
+  display: block;
+  border: #000 solid 3px;
+  box-shadow: 10px -10px 0px 0px rgba(214,77,61,1);
 }
 .caixa-destaque-livre{
   border: 3px solid #000;
@@ -391,6 +394,39 @@ img.sombra{
 }
 /*--------- /PODCAST ---------*/
 
+/*-------- MODAIS --------*/
+.modal-100 .modal-content{
+  background: linear-gradient(0.40turn, #fff 40%, #5F9B99);
+  background-size: cover !important;
+  background-position: center !important;
+  background-attachment: fixed !important;
+}
+.modal-100 .modal-body .container{
+  background-color: transparent;
+  position: relative;
+  margin-bottom: 30px;
+  padding: 0px 60px;
+  border-radius: 20px;
+}
+.btn-fechar, .btn-default{
+  width: 120px;
+  height: 50px;
+  background-color: #80392C;
+  color: #fff;
+  font-weight: bold;
+}
+.btn-fechar:hover, .btn-default:hover{
+  background-color: #2A8080;
+  color: #fff;
+}
+.btn-fechar{
+  position: relative;
+  margin: 40px auto;
+  display: block;
+}
+.ico-fechar{padding-top: 25px;}
+/*-------- /MODAIS --------*/
+
 
 .modal-header h4{
   font-weight: bold;
@@ -481,5 +517,10 @@ img.sombra{
   }
   .bt-formatacao, .bt-formatacao:hover{
     background: url('../imgs/curriculo_bt3.png') no-repeat;
+  }
+
+  .video-youtube, .espera-video {
+    width: 320px;
+    height: 180px;
   }
 }
